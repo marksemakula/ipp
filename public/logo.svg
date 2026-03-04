@@ -1,0 +1,26 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c92a2a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a01f1f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#grad1)"/>
+  
+  <!-- Letter "i" -->
+  <rect x="70" y="80" width="15" height="70" fill="white" rx="3"/>
+  <circle cx="77.5" cy="60" r="10" fill="white"/>
+  
+  <!-- Letter "P" -->
+  <path d="M 95 80 L 95 150 M 95 80 L 120 80 Q 135 80 135 95 Q 135 110 120 110 L 95 110" 
+        stroke="white" stroke-width="15" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Book icon (subtle) -->
+  <path d="M 85 165 L 85 175 L 115 175 L 115 165" stroke="#fbbf24" stroke-width="2" fill="none"/>
+  <line x1="100" y1="165" x2="100" y2="175" stroke="#fbbf24" stroke-width="1"/>
+  
+  <!-- Road/path element -->
+  <path d="M 40 180 Q 100 150 160 180" stroke="#fbbf24" stroke-width="3" fill="none" stroke-dasharray="5,5"/>
+</svg>
