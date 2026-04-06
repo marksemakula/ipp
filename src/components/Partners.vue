@@ -34,6 +34,7 @@ const partners: Partner[] = [
   { name: 'Princeton University', logo: '/logos/princeton.png' },
   { name: 'Columbia University', logo: '/logos/columbia.png' },
   { name: 'University of Toronto', logo: '/logos/toronto.png' },
+  { name: 'Braemar College', logo: '/logos/braemar.webp' },
   { name: 'Imperial College London', logo: '/logos/imperial.png' },
 ]
 </script>
