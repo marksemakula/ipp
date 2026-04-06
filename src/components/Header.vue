@@ -3,7 +3,7 @@
     <div class="container">
       <nav class="nav">
         <div class="logo">
-          <span class="logo-text">IPP</span>
+          <Logo size="small" />
         </div>
         
         <button class="mobile-toggle" @click="toggleMobileMenu" aria-label="Toggle menu">
@@ -25,6 +25,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
+import Logo from './Logo.vue'
 
 const isScrolled = ref(false)
 const mobileMenuOpen = ref(false)
@@ -77,15 +78,6 @@ onUnmounted(() => {
 .logo {
   display: flex;
   align-items: center;
-}
-
-.logo-text {
-  font-size: 1.75rem;
-  font-weight: 700;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .mobile-toggle {

@@ -25,6 +25,7 @@ interface Partner {
 }
 
 const partners: Partner[] = [
+  { name: 'IPP - International Education Pathway Program', logo: '/logos/ipp-logo.svg' },
   { name: 'Oxford University', logo: '/logos/oxford.png' },
   { name: 'Cambridge University', logo: '/logos/cambridge.png' },
   { name: 'Harvard University', logo: '/logos/havard.png' },

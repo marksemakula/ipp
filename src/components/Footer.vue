@@ -3,9 +3,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
-          <h3 class="footer-logo">IPP</h3>
-          <p>International Education Pathway Program</p>
-          <p class="contact-numbers">+256708800005 / 708800006</p>
+          <Logo size="large" />
         </div>
         
         <div class="footer-links">
@@ -14,6 +12,10 @@
           <a href="#programs">Programs</a>
           <a href="#contact">Contact</a>
         </div>
+      </div>
+      
+      <div class="footer-contact">
+        <p class="contact-numbers">+256708800005 / 708800006</p>
       </div>
       
       <div class="footer-socials">
@@ -82,6 +84,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
+import Logo from './Logo.vue'
 
 const currentYear = computed(() => new Date().getFullYear())
 </script>
@@ -120,8 +123,13 @@ const currentYear = computed(() => new Date().getFullYear())
   font-size: 0.9rem;
 }
 
+.footer-contact {
+  margin: 2rem 0;
+  text-align: center;
+}
+
 .contact-numbers {
-  margin-top: 0.5rem;
+  margin: 0;
   font-weight: 600;
   color: var(--white) !important;
   font-size: 1rem !important;
