@@ -163,7 +163,12 @@ const handleSubmit = () => {
 <style scoped>
 .contact {
   padding: 1.5rem 0 6rem 0;
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  background:  
+    linear-gradient(135deg, rgba(243, 244, 246, 0.85) 0%, rgba(229, 231, 235, 0.85) 100%),
+    url('/world-map-bg.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
   position: relative;
   overflow: hidden;
 }
@@ -182,6 +187,7 @@ const handleSubmit = () => {
   color: var(--text-dark);
   font-size: 2.75rem;
   font-weight: 700;
+  margin-top: 4rem;
   margin-bottom: 1rem;
   line-height: 1.2;
 }
