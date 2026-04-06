@@ -36,7 +36,7 @@ defineProps<{
 
 .logo-vertical .letter {
   font-weight: 700;
-  font-family: 'Source Sans 3', 'Ubuntu', sans-serif;
+  font-family: 'Source Sans 3', 'Source Sans Pro', 'Ubuntu', sans-serif !important;
   letter-spacing: 0;
   display: flex;
   align-items: center;

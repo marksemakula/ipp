@@ -76,7 +76,15 @@
       </div>
       
       <div class="footer-bottom">
-        <p>&copy; {{ currentYear }} IPP. All rights reserved.</p>
+        <p>&copy; {{ currentYear }} GES International Education Pathway Program. All rights reserved.</p>
+        <div class="powered-by">
+          <span>Powered by</span>
+          <img 
+            src="/Inzozi-grayscale.png" 
+            alt="Inzozi Logo" 
+            class="inzozi-logo"
+          />
+        </div>
       </div>
     </div>
   </footer>
@@ -215,12 +223,32 @@ const currentYear = computed(() => new Date().getFullYear())
 .footer-bottom {
   padding-top: 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .footer-bottom p {
   color: rgba(255, 255, 255, 0.5);
   margin: 0;
   font-size: 0.9rem;
+}
+
+.powered-by {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.powered-by span {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.875rem;
+}
+
+.inzozi-logo {
+  height: 2.5rem;
+  width: auto;
 }
 
 @media (max-width: 768px) {
@@ -240,6 +268,14 @@ const currentYear = computed(() => new Date().getFullYear())
   .app-downloads {
     flex-direction: column;
     align-items: center;
+  }
+  
+  .footer-bottom {
+    gap: 1.5rem;
+  }
+  
+  .powered-by {
+    flex-direction: row;
   }
 }
 </style>

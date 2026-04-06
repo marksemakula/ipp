@@ -20,6 +20,7 @@
     </header>
 
     <div class="container hero-container">
+      <img src="/logos/GES.png" alt="GES Logo" class="ges-background-logo" />
       <div class="hero-content">
         <h1 class="hero-title">International Education Pathway Program</h1>
         <p class="hero-subtitle">
@@ -113,12 +114,27 @@ const closeMobileMenu = () => {
   align-items: center;
   min-height: 55vh;
   padding-top: 80px;
+  position: relative;
+}
+
+.ges-background-logo {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  height: auto;
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .hero-content {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-title {
@@ -166,6 +182,11 @@ const closeMobileMenu = () => {
     transform: translateY(0);
     opacity: 1;
     pointer-events: all;
+  }
+
+  .ges-background-logo {
+    width: 120px;
+    opacity: 0.1;
   }
 
   .hero-title {
